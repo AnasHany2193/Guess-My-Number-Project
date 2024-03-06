@@ -2,6 +2,8 @@
 
 A simple number guessing game built with HTML, CSS, and JavaScript.
 
+![Screenshot](img/screenshot.png)
+
 ## Introduction
 
 Guess My Number! is a fun game where the player needs to guess a number between 1 and 20. The game provides feedback on each guess, indicating whether the guess is too high or too low. The player's goal is to guess the correct number with the fewest attempts possible.
