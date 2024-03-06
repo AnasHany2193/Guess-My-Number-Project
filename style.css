@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
@@ -116,4 +116,52 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+/* For screens smaller than 600px (phones) */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1.4rem; /* Adjust font size for better readability on smaller screens */
+  }
+
+  header {
+    height: 25vh; /* Decrease header height for smaller screens */
+  }
+
+  main {
+    height: 75vh; /* Increase main height for smaller screens */
+    flex-direction: column; /* Stack main content vertically */
+    justify-content: center; /* Center main content vertically */
+  }
+
+  .left {
+    width: 80%; /* Adjust width of guess input and button */
+    margin-bottom: 2rem; /* Add some spacing between sections */
+  }
+
+  .guess {
+    font-size: 3rem; /* Adjust font size of guess input for smaller screens */
+    padding: 1.5rem; /* Adjust padding of guess input for smaller screens */
+  }
+
+  .btn {
+    font-size: 1.8rem; /* Adjust font size of buttons for smaller screens */
+    padding: 1.5rem 2rem; /* Adjust padding of buttons for smaller screens */
+  }
+
+  .right {
+    width: 80%; /* Adjust width of message and score section */
+    text-align: center; /* Center align text in the right section */
+  }
+
+  .label-score,
+  .label-highscore {
+    margin-bottom: 1.5rem; /* Add some spacing between score and highscore */
+  }
+
+  .number {
+    font-size: 4rem; /* Adjust font size of number display */
+    padding: 2rem; /* Adjust padding of number display */
+    width: 80%; /* Adjust width of number display */
+  }
 }
